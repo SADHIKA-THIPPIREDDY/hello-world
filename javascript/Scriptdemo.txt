@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+<script type="text/javascript">
+function Second_Greatest_Lowest(arr_num)
+{
+  arr_num.sort(function(x,y)
+           {
+           return x-y;
+           });
+  var uniqa = [arr_num[0]];
+  var result = [];
+  
+  for(var j=1; j < arr_num.length; j++)
+  {
+    if(arr_num[j-1] !== arr_num[j])
+    {
+      uniqa.push(arr_num[j]);
+    }
+  }
+    result.push(uniqa[1],uniqa[uniqa.length-2]);
+  return result.join(',');
+  }
+document.write("The second smallest and The second largest Numbers are :")
+document.write("<br>");
+document.write(Second_Greatest_Lowest([1,2,3,4,5]));
+document.write("<br>");
+document.write("The second smallest and The second largest Numbers are :")
+document.write("<br>");
+document.write(Second_Greatest_Lowest([3,8,9,7,6,57,68]));
+</script>
+</head>
+<body>
+</body>
+</html>

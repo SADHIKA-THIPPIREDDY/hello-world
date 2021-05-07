@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+<script type="text/javascript">
+text_truncate = function(str, len, end) {
+    if (len == null) {
+      len= 100;
+    }
+    if (end == null) {
+      end= '...';
+    }
+    if (str.length > len) {
+      return str.substring(0, len - end.length) + end;
+    } else {
+      return str;
+    }
+  }
+</script>
+</head>
+<body>
+<h3>Truncating String</h3>
+<script type="text/javascript">
+document.write(text_truncate('We are doing JS string exercises.'))
+document.write("<br>");
+document.write(text_truncate('We are doing JS string exercises.',19))
+document.write("<br>");
+document.write(text_truncate('We are doing JS string exercises.',15,'!!'))
+</script>
+</body>
+</html>

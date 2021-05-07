@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<div>
+		<h3>This is div representation</h3>
+		<div><a href = "https://www.google.com/"><img src="download.png">GOOGLE</a></div><br>
+		<div><a href = "https://www.w3schools.com/"><img src="w3schools.jfif">W3schools</a></div><br>
+		<div><a href = "https://www.facebook.com/"><img src="facbook.png">FACEBOOK</a></div>	<br>
+	</div>
+	<div>
+		<h3>This is span representation</h3>
+		<span><a href = "https://www.google.com/"><img src="download.png">GOOGLE</a></span><br>
+		<span><a href = "https://www.w3schools.com/"><img src="w3schools.jfif">W3schools</a></span><br>
+		<span><a href = "https://www.facebook.com/"><img src="facbook.png">FACEBOOK</a></span><br>
+	</div>
+</body>
+</html>
